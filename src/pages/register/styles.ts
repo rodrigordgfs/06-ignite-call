@@ -2,7 +2,7 @@ import { styled, Box, Heading, Text } from '@ignite-ui/react'
 
 export const Container = styled('main', {
   maxWidth: '572px',
-  margin: '$20 autp $4',
+  margin: '$20 auto $4',
   padding: '0 $4',
 })
 
@@ -30,4 +30,8 @@ export const Form = styled(Box, {
     flexDirection: 'column',
     gap: '$2',
   },
+})
+
+export const FormError = styled(Text, {
+  color: '#f75a68',
 })
