@@ -5,7 +5,7 @@ import { AuthError, ConnectBox, ConnectItem } from './styles'
 import { signIn, useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 
-export default function Register() {
+export default function ConnectCalendar() {
   const session = useSession()
   const router = useRouter()
 
@@ -24,8 +24,7 @@ export default function Register() {
           Precisamos de algumas informações para criar seu perfil! Ah, você pode
           editar essas informações depois.
         </Text>
-
-        <MultiStep size={4} currentStep={2}></MultiStep>
+        <MultiStep size={4} currentStep={2} />
       </Header>
 
       <ConnectBox>

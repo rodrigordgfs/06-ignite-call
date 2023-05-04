@@ -65,8 +65,8 @@ export default function Register() {
           Precisamos de algumas informações para criar seu perfil! Ah, você pode
           editar essas informações depois.
         </Text>
+        <MultiStep size={4} currentStep={1} />
 
-        <MultiStep size={4} currentStep={1}></MultiStep>
         <Form as="form" onSubmit={handleSubmit(handleRegister)}>
           <label>
             <Text size="sm">Nome de usuário</Text>
